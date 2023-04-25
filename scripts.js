@@ -38,7 +38,7 @@ function simulate() {
 
         const interval = setInterval(() => {
             countdown--;
-            btnSimulate.textContent = `Aguarde ${countdown}s`;
+            btnSimulate.textContent = `Próxima rodada em ${countdown}s`;
 
             if (countdown <= 0) {
                 clearInterval(interval);
