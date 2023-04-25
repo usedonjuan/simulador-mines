@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mines Simulator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center">
+    <div class="container mx-auto p-6 bg-white rounded-xl shadow-md">
+        <h1 class="text-3xl font-bold mb-4">Simulador de Mines</h1>
+
+        <div class="grid grid-cols-5 gap-2 mb-4">
+            <!-- Matriz 5x5 -->
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+            <div class="cell bg-gray-300 w-full h-12 rounded-md"></div>
+        </div>
+
+        <button id="btn-simulate" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Simular
+        </button>
+
+        <div class="loading-container hidden mt-4" id="loading-container">
+            <svg class="animate-spin h-5 w-5 mr-3" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 1.962.531 3.801 1.445 5.256l2.775-1.794v-.171z"></path>
+            </svg>
+            Hackeando...
+        </div>
+
+        <div class="iframe-container relative overflow-hidden mt-4" style="padding-top: 900px;">
+            <iframe src="https://m.playpix.com/affiliates/?btag=1166547" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
