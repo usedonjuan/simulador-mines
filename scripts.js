@@ -51,3 +51,19 @@ function simulate() {
 }
 
 btnSimulate.addEventListener('click', simulate);
+
+
+//Modal
+const registerModal = document.getElementById('register-modal');
+const modalClose = document.getElementById('modal-close');
+
+function openModal() {
+    registerModal.style.display = 'flex';
+}
+
+function closeModal() {
+    registerModal.style.display = 'none';
+}
+
+modalClose.addEventListener('click', closeModal);
+
