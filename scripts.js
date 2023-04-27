@@ -53,29 +53,5 @@ function simulate() {
 btnSimulate.addEventListener('click', simulate);
 
 
-//Modal
-const registerModal = document.getElementById('register-modal');
-const closeModal = document.getElementById('close-modal');
-const registerLink = document.querySelector('a[href="https://playpix.com/affiliates/?btag=1166547_l178159"]');
-
-function openModal() {
-    registerModal.classList.remove('hidden');
-}
-
-function closeModalFunc() {
-    registerModal.classList.add('hidden');
-}
-
-registerLink.addEventListener('click', (event) => {
-    event.preventDefault();
-    openModal();
-});
-
-closeModal.addEventListener('click', closeModalFunc);
-registerModal.addEventListener('click', (event) => {
-    if (event.target === registerModal) {
-        closeModalFunc();
-    }
-});
 
 
