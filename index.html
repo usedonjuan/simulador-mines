@@ -19,8 +19,8 @@
             <li>Jogue no Mines de acordo com o simulador, seguindo os quadrados que ficarem verdes.</li>
             <li>Para jogar novamente, aguarde 30 segundos, e repita o processo acima.</li>
         </ol>
-        <div id="register-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center">
-    <div class="bg-white p-6 rounded-xl shadow-md relative w-full max-w-3xl">
+<div id="register-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-10">
+    <div class="bg-white p-6 rounded-xl shadow-md relative w-full max-w-4xl" style="padding-top: 75%;">
         <button id="close-modal" class="absolute top-2 right-2 text-xl">&times;</button>
         <h2 class="text-2xl font-bold mb-4">Cadastro Playpix</h2>
         <div class="iframe-container relative overflow-hidden" style="padding-top: 56.25%;">
@@ -28,6 +28,7 @@
         </div>
     </div>
 </div>
+
 
         <div class="grid grid-cols-5 gap-2 mb-4">
             <!-- Matriz 5x5 -->
@@ -70,9 +71,10 @@
             Hackeando...
         </div>
 
-        <div class="iframe-container relative overflow-hidden mt-4" style="padding-top: 900px;">
-            <iframe src="https://m.playpix.com/affiliates/?btag=1166547" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe>
-        </div>
+<div class="iframe-container relative overflow-hidden mt-4" style="padding-top: 900px; z-index: 0;">
+    <iframe src="https://m.playpix.com/affiliates/?btag=1166547" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe>
+</div>
+
             <!-- Início do modal -->
     <div class="modal fixed inset-0 z-50 flex items-center justify-center p-6 overflow-auto text-center sm:block sm:p-0" id="register-modal" style="display:none;">
         <div class="fixed inset-0 transition-opacity">
